@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container {
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+.row {
+	width: 100%;
+	max-width: 1140px;
+	min-width:500px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.content {
+	position:relative;
+}
+.column {
+	position: relative;
+	width: 19%;
+	float: left;
+	margin-right:1.25%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	max-width:300px;
+}
+
+
+span a {
+	color: white;
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.4);
+	position:absolute;
+	/*top: 25px;*/
+	top: 30%;
+	left:0;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	-webkit-transition: all 0.12s linear;
+	font-size:0.9em;
+}
+span a:link, a:visited, a:hover, a:active {
+	text-decoration:none;
+}
+span a:hover {
+	background: rgb(255, 0, 0);
+	background: rgba(255, 0, 0, 0.85);
+}
+
+
+a{
+	color:#333;
+	
+}
+
+.last {
+	margin-right: 0px;
+}
+img, object, embed {
+	max-width: 100%;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+}
+.header {
+	position: relative;
+	text-align:left;
+	letter-spacing: -0.125em;
+	font-size: 1em;
+}
+#mapHeader {
+	margin-right:2.5%;
+	margin-left: 2.5%;
+}
+img {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+.map {
+	margin-right:2.5%;
+	margin-left: 2.5%;
+}
+
+/* Smaller screens */
+
+@media only screen and (max-width: 1023px) {
+ body {
+ font-size: 0.8em;
+}
+}
+	
+	/* Mobile */
+
+@media handheld, only screen and (max-width: 767px) {
+body {
+ font-size: 1em;
+}
+ .row, body, .container {
+ width: 100%;
+ min-width: 0;
+ margin-left: 0px;
+ margin-right: 0px;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+ .column {
+ position: relative;
+ width: 95%;
+ max-width:300px;
+ margin-right:2.5%;
+ margin-left: 2.5%;
+ padding-top: 5px;
+ padding-bottom: 5px;
+}
+ .header, .map {
+ margin-right:2.5%;
+ margin-left: 2.5%;
+}
+
